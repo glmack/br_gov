@@ -149,3 +149,68 @@ COPY cidades_regic_2018_v2
 FROM '/Users/lee/Documents/code/br_gov/data/regic2018_cidades_v2.csv'
 WITH CSV DELIMITER ','
 ENCODING 'UTF8' HEADER;
+
+
+CREATE TABLE populated_places_geonet
+(
+    RC int,
+    UFI int,
+    UNI int,
+    LAT numeric,
+    LONG numeric,
+    DMS_LAT text,
+    DMS_LONG text,
+    MGRS text,
+    JOG text,
+    FC text,
+    DSG text,
+    PC text,
+    CC1 text,
+    ADM1 int,
+    POP int,
+    ELEV int,
+    CC2 text,
+    NT text,
+    LC text,
+    SHORT_FORM text,
+    GENERIC text,
+    SORT_NAME_RO text,
+    FULL_NAME_RO text,
+    FULL_NAME_ND_RO text,
+    SORT_NAME_RG text,
+    FULL_NAME_RG text,
+    FULL_NAME_ND_RG text,
+    NOTE text,
+    MODIFY_DATE date,
+    DISPLAY text,
+    NAME_RANK int,
+    NAME_LINK text,
+    TRANSL_CD text,
+    NM_MODIFY_DATE date,
+    F_EFCTV_DT text,
+    F_TERM_DT text
+);
+
+COPY populated_places_geonet
+FROM '/Users/lee/Documents/code/br_gov/data/geonet_br/br_populatedplaces_p.txt'
+WITH DELIMITER E'\t'
+ENCODING 'UTF8' -- confirm
+CSV HEADER;
+
+CREATE TABLE place_names_br_bcim
+(
+    id_lista_nome_geo int,
+    nome_geografico text,
+    sigla_categoria text,
+    nm_classe text,
+    sigla_pais text,
+    sigla_unid_federacao text,
+    latitude numeric,
+    longitude numeric,
+    tp_geom text
+);
+
+COPY place_names_br_bcim
+FROM '/Users/lee/Documents/code/br_gov/data/bcim/bcim_2016_nomesgeograficos_18_09_2018.csv'
+WITH CSV DELIMITER ';'
+ENCODING 'UTF8' HEADER;
