@@ -214,3 +214,36 @@ COPY place_names_br_bcim
 FROM '/Users/lee/Documents/code/br_gov/data/bcim/bcim_2016_nomesgeograficos_18_09_2018.csv'
 WITH CSV DELIMITER ';'
 ENCODING 'UTF8' HEADER;
+
+--
+CREATE TABLE geonames_br
+(
+    a int,
+    b text,
+    c text,
+    d text,
+    e numeric,
+    f numeric,
+    g text,
+    h text,
+    i text,
+    j text,
+    k int,
+    l int,
+    m text,
+    n text,
+    o int,
+    p int,
+    q int,
+    r text,
+    s date
+);
+
+--TODO (Lee): Fix error from workaround in copy, wit csv header
+-- postgres doesn't like the first line: '3375720	Tawaribar Rapids' without csv header
+-- I omitted first line as temp workaround
+COPY geonames_br
+FROM '/Users/lee/Documents/code/br_gov/data/geonames_br/BR.txt'
+WITH DELIMITER E'\t'
+ENCODING 'UTF8'
+CSV HEADER; -- confirm
