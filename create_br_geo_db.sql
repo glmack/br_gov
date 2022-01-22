@@ -218,28 +218,28 @@ ENCODING 'UTF8' HEADER;
 --
 CREATE TABLE geonames_br
 (
-    a int,
-    b text,
-    c text,
-    d text,
-    e numeric,
-    f numeric,
-    g text,
-    h text,
-    i text,
-    j text,
-    k int,
-    l int,
-    m text,
-    n text,
-    o int,
-    p int,
-    q int,
-    r text,
-    s date
+    geonameid int, --integer id of record in geonames database
+    geoname text, --name of geographical point (utf8), varchar(200)
+    asciiname text, --name of geographical point in plain ascii characters, varchar(200)
+    altnames text, -- alternate names, comma separated, ascii, varchar(10000)
+    latitude numeric, --latitude in decimal degrees, (wgs84)
+    longitude numeric, --longitude in decimal degrees, (wgs84)
+    feature_class text, --see http://www.geonames.org/export/codes.html, char(1)
+    feature_code text, --see http://www.geonames.org/export/codes.html, varchar(10)
+    country_code text, --ISO-3166 2-letter country code, 2 characters
+    altcountrynames text, --alternate comma-separated country codes, ISO-3166, 200 characters
+    adm1_code int, --fipscode (subject to change to iso code) varchar(20)
+    adm2_code int, --code for 2nd administrative division, a county in the US; varchar(80) 
+    adm3_code text, --code for 3rd level administrative division, varchar(20)
+    adm4_code text, --code for 4th level administrative division, varchar(20)
+    population int, --bigint (8 byte int) 
+    elevation int, --in meters, integer
+    dem int, --digital elevation model, average elevation in meters, srtm3 or gtopo30, srtm processed by cgiar/ciat
+    timezone text, --the iana timezone id (see file timeZone.txt) varchar(40)
+    modification date --date of last modification in yyyy-MM-dd format
 );
 
---TODO (Lee): Fix error from workaround in copy, wit csv header
+--TODO (Lee): Fix error from workaround in copy, with csv header
 -- postgres doesn't like the first line: '3375720	Tawaribar Rapids' without csv header
 -- I omitted first line as temp workaround
 COPY geonames_br
