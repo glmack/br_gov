@@ -247,3 +247,25 @@ FROM '/Users/lee/Documents/code/br_gov/data/geonames_br/BR.txt'
 WITH DELIMITER E'\t'
 ENCODING 'UTF8'
 CSV HEADER; -- confirm
+
+
+-- TODO (Lee) - details steps re: utf bom of csv preceding uf_id join below
+
+
+-- add column and, add uf id from join results
+alter table trechos
+add column origem_uf_id
+int,
+add column destino_uf_id int;
+
+-- update origem_uf_id with results of join to uf_dtb_2020 for Br states, origem
+update trechos 
+set origem_uf_id = uf_dtb_2020.uf_id
+from uf_dtb_2020 where trechos.origem_uf = uf_dtb_2020.uf_nome;
+
+-- update destino_uf_id with results of join to uf_dtb_2020 for Br states, destino
+update trechos 
+set destino_uf_id = uf_dtb_2020.uf_id
+from uf_dtb_2020 where trechos.destino_uf = uf_dtb_2020.uf_nome;
+
+-- TODO (Lee) deal with nulls/missingness cat column for uf_id for destino, origem
