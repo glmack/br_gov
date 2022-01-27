@@ -670,7 +670,7 @@ brgmob=# SELECT distinct(trechos.origem_cidade, trechos.origem_uf)
 -- row | (Xavantina,"Mato Grosso")
 
 
---fuzzy matching
+--fuzzy matching of trechos.cidade/municipios.municipio names 
 CREATE EXTENSION fuzzystrmatch;
 
 --TODO (Lee) need to fix bug below
@@ -695,5 +695,12 @@ CREATE EXTENSION fuzzystrmatch;
 -- WHERE t.origem_pais = 'Brasil'
 -- AND levenshtein(t.origem_cidade, m.nome_municipio) > 0
 -- LIMIT 1000;
+
+SELECT distinct(t.origem_cidade, m.nome_municipio, t.origem_uf)
+FROM trechos t, municipios_dtb_2020 m                                            
+WHERE t.origem_pais = 'Brasil'
+AND levenshtein(t.origem_cidade, m.nome_municipio) >= 0
+LIMIT 1000;
+
 
 
