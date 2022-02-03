@@ -670,6 +670,306 @@ brgmob=# SELECT distinct(trechos.origem_cidade, trechos.origem_uf)
 -- row | (Xavantina,"Mato Grosso")
 
 
+-- with D, replaced with D'
+-- -[ RECORD 1 ]--------------------------------------------
+-- row | (Acarapé,Ceará)
+-- -[ RECORD 2 ]--------------------------------------------
+-- row | (Acégua,"Rio Grande do Sul")
+-- -[ RECORD 3 ]--------------------------------------------
+-- row | ("Alta Floresta do Oeste",Rondônia)
+-- -[ RECORD 4 ]--------------------------------------------
+-- row | ("Alvorada do Oeste",Rondônia)
+-- -[ RECORD 5 ]--------------------------------------------
+-- row | (Amambaí,"Mato Grosso do Sul")
+-- -[ RECORD 6 ]--------------------------------------------
+-- row | ("Americo de Campos","São Paulo")
+-- -[ RECORD 7 ]--------------------------------------------
+-- row | ("Amparo da Serra","Minas Gerais")
+-- -[ RECORD 8 ]--------------------------------------------
+-- row | ("Amparo de São Francisco",Sergipe)
+-- -[ RECORD 9 ]--------------------------------------------
+-- row | ("Aparecida D'Oeste","São Paulo")
+-- -[ RECORD 10 ]-------------------------------------------
+-- row | (Aracatú,Bahia)
+-- -[ RECORD 11 ]-------------------------------------------
+-- row | (Araçoiaba,Ceará)
+-- -[ RECORD 12 ]-------------------------------------------
+-- row | (Araguaia,"Mato Grosso")
+-- -[ RECORD 13 ]-------------------------------------------
+-- row | ("Arquipélago de São Pedro e São Paulo",Pernambuco)
+-- -[ RECORD 14 ]-------------------------------------------
+-- row | ("Arquipélago do Bailique",Amapá)
+-- -[ RECORD 15 ]-------------------------------------------
+-- row | ("Atilio Vivacqua","Espírito Santo")
+-- -[ RECORD 16 ]-------------------------------------------
+-- row | ("Augusto Severo","Rio Grande do Norte")
+-- -[ RECORD 17 ]-------------------------------------------
+-- row | (Barreiros,Piauí)
+-- -[ RECORD 18 ]-------------------------------------------
+-- row | ("Bela Vista do Caroba",Paraná)
+-- -[ RECORD 19 ]-------------------------------------------
+-- row | ("Belém de São Francisco",Pernambuco)
+-- -[ RECORD 20 ]-------------------------------------------
+-- row | (Biritiba-Mirim,"São Paulo")
+-- -[ RECORD 21 ]-------------------------------------------
+-- row | (Bocaína,Piauí)
+-- -[ RECORD 22 ]-------------------------------------------
+-- row | (Brasópolis,"Minas Gerais")
+-- -[ RECORD 23 ]-------------------------------------------
+-- row | (Brodósqui,"São Paulo")
+-- -[ RECORD 24 ]-------------------------------------------
+-- row | (Cabo,Pernambuco)
+-- -[ RECORD 25 ]-------------------------------------------
+-- row | (Cambirá,Paraná)
+-- -[ RECORD 26 ]-------------------------------------------
+-- row | ("Campo Limpo Goiás",Goiás)
+-- -[ RECORD 27 ]-------------------------------------------
+-- row | ("Campo de Santana",Paraíba)
+-- -[ RECORD 28 ]-------------------------------------------
+-- row | ("Cerro Cora","Rio Grande do Norte")
+-- -[ RECORD 29 ]-------------------------------------------
+-- row | (Chiapeta,"Rio Grande do Sul")
+-- -[ RECORD 30 ]-------------------------------------------
+-- row | ("Cidade de Goiás",Goiás)
+-- -[ RECORD 31 ]-------------------------------------------
+-- row | ("Conselheiro Mairynck",Paraná)
+-- -[ RECORD 32 ]-------------------------------------------
+-- row | ("Couto de Magalhães",Tocantins)
+-- -[ RECORD 33 ]-------------------------------------------
+-- row | (Cristais,"São Paulo")
+-- -[ RECORD 34 ]-------------------------------------------
+-- row | (Curuca,Pará)
+-- -[ RECORD 35 ]-------------------------------------------
+-- row | ("Diamante do Oeste",Paraná)
+-- -[ RECORD 36 ]-------------------------------------------
+-- row | ("Dias D'Ávila",Bahia)
+-- -[ RECORD 37 ]-------------------------------------------
+-- row | ("Eldorado dos Carajás",Pará)
+-- -[ RECORD 38 ]-------------------------------------------
+-- row | (Embu,"São Paulo")
+-- -[ RECORD 39 ]-------------------------------------------
+-- row | (Ererê,Ceará)
+-- -[ RECORD 40 ]-------------------------------------------
+-- row | ("Estrela D'Oeste","São Paulo")
+-- -[ RECORD 41 ]-------------------------------------------
+-- row | ("Fortaleza do Tabocão",Tocantins)
+-- -[ RECORD 42 ]-------------------------------------------
+-- row | ("Francisco Macêdo",Piauí)
+-- -[ RECORD 43 ]-------------------------------------------
+-- row | (Goio-Erê,Paraná)
+-- -[ RECORD 44 ]-------------------------------------------
+-- row | (Gouvêa,"Minas Gerais")
+-- -[ RECORD 45 ]-------------------------------------------
+-- row | ("Governador Lindemberg","Espírito Santo")
+-- -[ RECORD 46 ]-------------------------------------------
+-- row | ("Governador Newton Belo",Maranhão)
+-- -[ RECORD 47 ]-------------------------------------------
+-- row | ("Grão Pará","Santa Catarina")
+-- -[ RECORD 48 ]-------------------------------------------
+-- row | (Guaimbé,"São Paulo")
+-- -[ RECORD 49 ]-------------------------------------------
+-- row | ("Guarani D'Oeste","São Paulo")
+-- -[ RECORD 50 ]-------------------------------------------
+-- row | (Guaraniaçú,Paraná)
+-- -[ RECORD 51 ]-------------------------------------------
+-- row | ("Herval D'Oeste","Santa Catarina")
+-- -[ RECORD 52 ]-------------------------------------------
+-- row | (Iguaraci,Pernambuco)
+-- -[ RECORD 53 ]-------------------------------------------
+-- row | ("Ilha Grande","Rio de Janeiro")
+-- -[ RECORD 54 ]-------------------------------------------
+-- row | (Ipauçu,"São Paulo")
+-- -[ RECORD 55 ]-------------------------------------------
+-- row | (Irati,Pará)
+-- -[ RECORD 56 ]-------------------------------------------
+-- row | (Itacuruçá,"Rio de Janeiro")
+-- -[ RECORD 57 ]-------------------------------------------
+-- row | (Itaipava,"Rio de Janeiro")
+-- -[ RECORD 58 ]-------------------------------------------
+-- row | (Itajuipi,Bahia)
+-- -[ RECORD 59 ]-------------------------------------------
+-- row | (Itamarajú,Bahia)
+-- -[ RECORD 60 ]-------------------------------------------
+-- row | (Itaóca,"São Paulo")
+-- -[ RECORD 61 ]-------------------------------------------
+-- row | (Itapagé,Ceará)
+-- -[ RECORD 62 ]-------------------------------------------
+-- row | ("Itapejara D'Oeste",Paraná)
+-- -[ RECORD 63 ]-------------------------------------------
+-- row | (Itapiuna,Ceará)
+-- -[ RECORD 64 ]-------------------------------------------
+-- row | ("Itaporanga D'Ajuda",Sergipe)
+-- -[ RECORD 65 ]-------------------------------------------
+-- row | ("Itauna do Sul",Paraná)
+-- -[ RECORD 66 ]-------------------------------------------
+-- row | (Jaicos,Piauí)
+-- -[ RECORD 67 ]-------------------------------------------
+-- row | ("Lagoa Danta","Rio Grande do Norte")
+-- -[ RECORD 68 ]-------------------------------------------
+-- row | ("Lagoa do Itaenga",Pernambuco)
+-- -[ RECORD 69 ]-------------------------------------------
+-- row | ("Lauro Muller","Santa Catarina")
+-- -[ RECORD 70 ]-------------------------------------------
+-- row | (Maçambara,"Rio Grande do Sul")
+-- -[ RECORD 71 ]-------------------------------------------
+-- row | ("Mãe D'Água",Paraíba)
+-- -[ RECORD 72 ]-------------------------------------------
+-- row | (Marataizes,"Espírito Santo")
+-- -[ RECORD 73 ]-------------------------------------------
+-- row | ("Mirassol D'Oeste","Mato Grosso")
+-- -[ RECORD 74 ]-------------------------------------------
+-- row | (Mogi-Guaçú,"São Paulo")
+-- -[ RECORD 75 ]-------------------------------------------
+-- row | ("Moji Mirim","São Paulo")
+-- -[ RECORD 76 ]-------------------------------------------
+-- row | ("Morro Cabeça No Tempo",Piauí)
+-- -[ RECORD 77 ]-------------------------------------------
+-- row | ("Munhoz de Mello",Paraná)
+-- -[ RECORD 78 ]-------------------------------------------
+-- row | (Normândia,Roraima)
+-- -[ RECORD 79 ]-------------------------------------------
+-- row | ("Olho D'Água",Paraíba)
+-- -[ RECORD 80 ]-------------------------------------------
+-- row | ("Olho D'Água Grande",Alagoas)
+-- -[ RECORD 81 ]-------------------------------------------
+-- row | ("Olho D'Água das Cunhãs",Maranhão)
+-- -[ RECORD 82 ]-------------------------------------------
+-- row | ("Olho D'Água das Flores",Alagoas)
+-- -[ RECORD 83 ]-------------------------------------------
+-- row | ("Olho D'Água do Borges","Rio Grande do Norte")
+-- -[ RECORD 84 ]-------------------------------------------
+-- row | ("Olho D'Água do Casado",Alagoas)
+-- -[ RECORD 85 ]-------------------------------------------
+-- row | ("Olhos D'Água","Minas Gerais")
+-- -[ RECORD 86 ]-------------------------------------------
+-- row | ("Palmeira D'Oeste","São Paulo")
+-- -[ RECORD 87 ]-------------------------------------------
+-- row | ("Palmeira do Tocantins",Tocantins)
+-- -[ RECORD 88 ]-------------------------------------------
+-- row | ("Pântano Grande","Rio Grande do Sul")
+-- -[ RECORD 89 ]-------------------------------------------
+-- row | (Parati,"Rio de Janeiro")
+-- -[ RECORD 90 ]-------------------------------------------
+-- row | (Parau,"Rio Grande do Norte")
+-- -[ RECORD 91 ]-------------------------------------------
+-- row | (Parauapebas/Carajás,Pará)
+-- -[ RECORD 92 ]-------------------------------------------
+-- row | ("Parque Nacionaliba",Piauí)
+-- -[ RECORD 93 ]-------------------------------------------
+-- row | ("Passo do Camaragibe",Alagoas)
+-- -[ RECORD 94 ]-------------------------------------------
+-- row | (Passos,Maranhão)
+-- -[ RECORD 95 ]-------------------------------------------
+-- row | ("Patrocínio de Muriaé","Minas Gerais")
+-- -[ RECORD 96 ]-------------------------------------------
+-- row | ("Pau D`Arco do Piauí",Piauí)
+-- -[ RECORD 97 ]-------------------------------------------
+-- row | (Pauíni,Amazonas)
+-- -[ RECORD 98 ]-------------------------------------------
+-- row | ("Pedro Ii",Piauí)
+-- -[ RECORD 99 ]-------------------------------------------
+-- row | ("Pérola do Oeste",Paraná)
+-- -[ RECORD 100 ]------------------------------------------
+-- row | ("Pindaré Mirim",Maranhão)
+-- -[ RECORD 101 ]------------------------------------------
+-- row | ("Pingo D'Água","Minas Gerais")
+-- -[ RECORD 102 ]------------------------------------------
+-- row | ("Pio Ix",Piauí)
+-- -[ RECORD 103 ]------------------------------------------
+-- row | ("Pio Xii",Maranhão)
+-- -[ RECORD 104 ]------------------------------------------
+-- row | (Poxoréo,"Mato Grosso")
+-- -[ RECORD 105 ]------------------------------------------
+-- row | ("Presidente Castelo Branco","Santa Catarina")
+-- -[ RECORD 106 ]------------------------------------------
+-- row | ("Presidente Juscelino","Rio Grande do Norte")
+-- -[ RECORD 107 ]------------------------------------------
+-- row | (Quebrângulo,Alagoas)
+-- -[ RECORD 108 ]------------------------------------------
+-- row | (Queluzita,"Minas Gerais")
+-- -[ RECORD 109 ]------------------------------------------
+-- row | (Quixabá,Paraíba)
+-- -[ RECORD 110 ]------------------------------------------
+-- row | (Quixabá,Pernambuco)
+-- -[ RECORD 111 ]------------------------------------------
+-- row | ("Restinga Seca","Rio Grande do Sul")
+-- -[ RECORD 112 ]------------------------------------------
+-- row | (Safra,"Espírito Santo")
+-- -[ RECORD 113 ]------------------------------------------
+-- row | ("Santa Bárbara D'Oeste","São Paulo")
+-- -[ RECORD 114 ]------------------------------------------
+-- row | ("Santa Cecília de Umbuzeiro",Paraíba)
+-- -[ RECORD 115 ]------------------------------------------
+-- row | ("Santa Clara D'Oeste","São Paulo")
+-- -[ RECORD 116 ]------------------------------------------
+-- row | ("Santa Isabel do Pará",Pará)
+-- -[ RECORD 117 ]------------------------------------------
+-- row | ("Santa Rita D'Oeste","São Paulo")
+-- -[ RECORD 118 ]------------------------------------------
+-- row | ("Santa Rita do Araguaia","Mato Grosso")
+-- -[ RECORD 119 ]------------------------------------------
+-- row | ("Santa Teresinha",Bahia)
+-- -[ RECORD 120 ]------------------------------------------
+-- row | ("Santana do Livramento","Rio Grande do Sul")
+-- -[ RECORD 121 ]------------------------------------------
+-- row | (Santarém,Paraíba)
+-- -[ RECORD 122 ]------------------------------------------
+-- row | ("Santo Estevão",Bahia)
+-- -[ RECORD 123 ]------------------------------------------
+-- row | ("São Bento do Trairi","Rio Grande do Norte")
+-- -[ RECORD 124 ]------------------------------------------
+-- row | ("São Cristovão do Sul","Santa Catarina")
+-- -[ RECORD 125 ]------------------------------------------
+-- row | ("São Francisco Xavier","São Paulo")
+-- -[ RECORD 126 ]------------------------------------------
+-- row | ("São João D'Aliança",Goiás)
+-- -[ RECORD 127 ]------------------------------------------
+-- row | ("São João do Caru",Maranhão)
+-- -[ RECORD 128 ]------------------------------------------
+-- row | ("São João do Pau D'Alho","São Paulo")
+-- -[ RECORD 129 ]------------------------------------------
+-- row | ("São Jorge D'Oeste",Paraná)
+-- -[ RECORD 130 ]------------------------------------------
+-- row | ("São José do Mipibu","Rio Grande do Norte")
+-- -[ RECORD 131 ]------------------------------------------
+-- row | ("São Luís do Norte",Goiás)
+-- -[ RECORD 132 ]------------------------------------------
+-- row | ("São Luís do Paraitinga","São Paulo")
+-- -[ RECORD 133 ]------------------------------------------
+-- row | ("São Luís do Piauí",Piauí)
+-- -[ RECORD 134 ]------------------------------------------
+-- row | ("São Luiz do Anauá",Roraima)
+-- -[ RECORD 135 ]------------------------------------------
+-- row | ("São Miguel","São Paulo")
+-- -[ RECORD 136 ]------------------------------------------
+-- row | ("São Thomé das Letras","Minas Gerais")
+-- -[ RECORD 137 ]------------------------------------------
+-- row | ("São Valério da Natividade",Tocantins)
+-- -[ RECORD 138 ]------------------------------------------
+-- row | ("São Vicente Ferrer",Pernambuco)
+-- -[ RECORD 139 ]------------------------------------------
+-- row | ("Senador Eloi de Souza","Rio Grande do Norte")
+-- -[ RECORD 140 ]------------------------------------------
+-- row | (Seridó,Paraíba)
+-- -[ RECORD 141 ]------------------------------------------
+-- row | ("Sítio D'Abadia",Goiás)
+-- -[ RECORD 142 ]------------------------------------------
+-- row | ("Tanque D'Arca",Alagoas)
+-- -[ RECORD 143 ]------------------------------------------
+-- row | ("Trajano de Morais","Rio de Janeiro")
+-- -[ RECORD 144 ]------------------------------------------
+-- row | (Uchôa,"São Paulo")
+-- -[ RECORD 145 ]------------------------------------------
+-- row | ("Várzea da Roca",Bahia)
+-- -[ RECORD 146 ]------------------------------------------
+-- row | (Vazamor,"Minas Gerais")
+-- -[ RECORD 147 ]------------------------------------------
+-- row | ("Vespasiano Correa","Rio Grande do Sul")
+-- -[ RECORD 148 ]------------------------------------------
+-- row | (Xangri-Lá,"Rio Grande do Sul")
+-- -[ RECORD 149 ]------------------------------------------
+-- row | (Xavantina,"Mato Grosso")
+
 --fuzzy matching of trechos.cidade/municipios.municipio names 
 CREATE EXTENSION fuzzystrmatch;
 
@@ -696,11 +996,16 @@ CREATE EXTENSION fuzzystrmatch;
 -- AND levenshtein(t.origem_cidade, m.nome_municipio) > 0
 -- LIMIT 1000;
 
-SELECT distinct(t.origem_cidade, m.nome_municipio, t.origem_uf)
-FROM trechos t, municipios_dtb_2020 m                                            
-WHERE t.origem_pais = 'Brasil'
-AND levenshtein(t.origem_cidade, m.nome_municipio) >= 0
-LIMIT 1000;
+-- SELECT distinct(t.origem_cidade, m.nome_municipio, t.origem_uf)
+-- FROM trechos t, municipios_dtb_2020 m                                            
+-- WHERE t.origem_pais = 'Brasil'
+-- AND levenshtein(t.origem_cidade, m.nome_municipio) >= 0
+-- LIMIT 1000;
+
+COPY (SELECT nome_municipio, codigo_municipio_completo, uf_id, uf_nome
+      FROM municipios_dtb_2020)
+      TO '/Users/lee/Documents/code/br_gov/data/municipios.csv' 
+      DELIMITER ',' CSV HEADER;
 
 
 
