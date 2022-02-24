@@ -1006,6 +1006,3 @@ COPY (SELECT nome_municipio, codigo_municipio_completo, uf_id, uf_nome
       FROM municipios_dtb_2020)
       TO '/Users/lee/Documents/code/br_gov/data/municipios.csv' 
       DELIMITER ',' CSV HEADER;
-
-
-
